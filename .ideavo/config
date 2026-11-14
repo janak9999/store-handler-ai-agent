@@ -1,0 +1,47 @@
+{
+  "systemSetup": [],
+  "templateName": "custom",
+  "projectDependencies": [],
+  "codeChecks": [
+    {
+      "name": "Compile Python Sources",
+      "command": "python3 -m compileall -q store_handler tests"
+    },
+    {
+      "name": "Import Package",
+      "command": "python3 -c \"from store_handler.language import LanguageSupport\""
+    }
+  ],
+  "buildSteps": [
+    {
+      "name": "Build Python Package",
+      "command": "python3 -m compileall -q store_handler"
+    }
+  ],
+  "runStep": [],
+  "deploySteps": [],
+  "cleanupFiles": [
+    "**/__pycache__/",
+    "*.pyc",
+    "**/*.pyc",
+    "*.pyo",
+    "**/*.pyo",
+    ".pytest_cache/",
+    "**/.pytest_cache/",
+    ".mypy_cache/",
+    "**/.mypy_cache/",
+    ".ruff_cache/",
+    "**/.ruff_cache/",
+    "build/",
+    "dist/",
+    "*.egg-info/",
+    "**/*.egg-info/"
+  ],
+  "packageManager": "pip",
+  "envPaths": [
+    {
+      "name": "default",
+      "path": ".env"
+    }
+  ]
+}
