@@ -1,2 +1,1 @@
-Shopify# store-handler-ai-agent
-Multi-language AI agent for managing online/offline product stores with inventory, payments, scheduling, and location services
+[@GitHub](plugin://github@openai-curated-remote?remotePluginId=plugin_connector_1p_1a69035c238881919c4190932b2df699) Explain this repo's authentication using code and docs: components, request flow, and how credentials and tokens are handledhandel my c
